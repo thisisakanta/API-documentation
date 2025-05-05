@@ -1,0 +1,4 @@
+Flask
+flask-restx
+flask-jwt-extended
+Werkzeug
