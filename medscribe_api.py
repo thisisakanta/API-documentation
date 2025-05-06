@@ -910,7 +910,7 @@ class HealthTip(Resource):
     @health_tip_ns.doc('get_health_tip')
     @health_tip_ns.response(200, 'Success', health_tip_model)
     @health_tip_ns.response(404, 'Health tip not found')
-    @jwtOptional
+    @jwt_optional
     def get(self, id):
         """Get health tip details by ID"""
         # In a real application, this would fetch from a database
